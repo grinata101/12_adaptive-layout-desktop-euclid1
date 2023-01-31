@@ -199,12 +199,13 @@ p {
 }
 
 .nav-item:not(:last-child) {
-  margin-right: 84px;
+  margin-right: 80px;
 }
 
 .nav-link {
   font-size: 19px;
   line-height: 19px;
+  font-weight: 600;
 }
 
 .search {
@@ -346,8 +347,8 @@ input[type=search] {
 .hero-discr {
   margin-bottom: 89px;
   line-height: 29px;
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 700;
   color: var(--color-hero-article);
 }
 
@@ -408,10 +409,6 @@ input[type=search] {
   padding-left: 1px;
 }
 
-/* .section-about {
-  padding: 25px 50px 50px 50px;
-} */
-
 .about-title {
   margin-bottom: 20px;
 }
@@ -429,7 +426,6 @@ input[type=search] {
 }
 
 .about-block {
-  /* padding-top: 25px; */
   display: flex;
 }
 
@@ -501,7 +497,7 @@ input[type=search] {
 }
 
 .about-right-title {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -549,11 +545,11 @@ input[type=search] {
 }
 
 .projects-title {
-  margin-bottom: 53px;
+  margin-bottom: 52px;
 }
 
 .projects-steps {
-  margin-bottom: 48px;
+  margin-bottom: 47px;
   display: flex;
 }
 
@@ -592,7 +588,7 @@ input[type=search] {
 }
 
 .projects-left-text2 {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .projects-btn {
@@ -666,7 +662,6 @@ input[type=search] {
 }
 
 .question-btn-plus {
-  /* margin: 10px 0px; */
   margin: 0px 0px;
   background-color: #ececec;
   border-radius: 100%;
