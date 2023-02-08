@@ -1,55 +1,55 @@
 @font-face {
-	font-family: 'Montserrat';
-	src: url('/fonts/Montserrat-Bold.eot');
-	src: local('Montserrat Bold'), local('Montserrat-Bold'),
-		url('/fonts/MontserratBold.woff2') format('woff2'),
-		url('/fonts/MontserratBold.woff') format('woff');
-	font-weight: 700;
-	font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-	font-family: 'Montserrat';
-	src: url('/fonts/Montserrat-SemiBold.eot');
-	src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
-		url('/fonts/MontserratSemiBold.woff2') format('woff2'),
-		url('/fonts/MontserratSemiBold.woff') format('woff');
-	font-weight: 600;
-	font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-	font-family: 'Montserrat';
-	src: url('/fonts/Montserrat-Regular.eot');
-	src: local('Montserrat Regular'), local('Montserrat-Regular'),
-		url('/fonts/MontserratRegular.woff2') format('woff2'),
-		url('/fonts/MontserratRegular.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Bold.eot');
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+    url('/fonts/MontserratBold.woff2') format('woff2'),
+    url('/fonts/MontserratBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Montserrat';
-	src: url('/fonts/MontserratMedium.eot');
-	src: local('Montserrat Medium'), local('Montserrat-Medium'),
-  url('/fonts/MontserratMedium.woff2') format('woff2'),
-  url('/fonts/MontserratMedium.woff') format('woff');
-	font-weight: 500;
-	font-style: normal;
+  src: url('/fonts/Montserrat-SemiBold.eot');
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+    url('/fonts/MontserratSemiBold.woff2') format('woff2'),
+    url('/fonts/MontserratSemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Montserrat';
-	src: url('/fonts/Montserrat-ExtraBold.eot');
-	src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
-  url('/fonts/MontserratExtraBold.woff2') format('woff2'),
-  url('/fonts/MontserratExtraBold.woff') format('woff');
-	font-weight: 800;
-	font-style: normal;
+  src: url('/fonts/Montserrat-Regular.eot');
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url('/fonts/MontserratRegular.woff2') format('woff2'),
+    url('/fonts/MontserratRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/MontserratMedium.eot');
+  src: local('Montserrat Medium'), local('Montserrat-Medium'),
+    url('/fonts/MontserratMedium.woff2') format('woff2'),
+    url('/fonts/MontserratMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-ExtraBold.eot');
+  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+    url('/fonts/MontserratExtraBold.woff2') format('woff2'),
+    url('/fonts/MontserratExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -107,9 +107,21 @@ li {
   cursor: pointer;
 }
 
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .vissually-hidden {
   display: none;
 }
+
+/* img { */
+  /* This inherits all CSS values including `overflow` */
+  /* all: inherit;
+} */
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -142,7 +154,6 @@ p {
   margin-right: 0;
   /* Отступ слева в браузере IE и Opera */
   padding-left: 0;
-  /* padding: 50px 50px 55px; */
 }
 
 .header,
@@ -199,12 +210,13 @@ p {
 }
 
 .nav-item:not(:last-child) {
-  margin-right: 84px;
+  margin-right: 80px;
 }
 
 .nav-link {
   font-size: 19px;
   line-height: 19px;
+  font-weight: 600;
 }
 
 .search {
@@ -250,7 +262,7 @@ p {
 }
 
 .nav-search::placeholder {
-   color: transparent;
+  color: transparent;
 }
 
 .nav-search-svg {
@@ -276,17 +288,17 @@ p {
 }
 
 input[type="search"]::-webkit-search-cancel-button {
-	-webkit-appearance: none;
-	width: 24px;
-	height: 24px;
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
   background: url(../image/nav__serch-cross.svg);
-	margin-right: 0px;
-	cursor: pointer;
+  margin-right: 0px;
+  cursor: pointer;
 }
 
 
 input[type=search] {
-	-webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 .nav__serch-cross {
@@ -323,6 +335,7 @@ input[type=search] {
   margin-bottom: 25px;
   padding-top: 100px;
   padding-left: 80px;
+  padding-bottom: 5vw;
   background-image: url(../image/header1-balconies.png);
   border-radius: var(--border-radius);
   background-size: cover;
@@ -346,8 +359,8 @@ input[type=search] {
 .hero-discr {
   margin-bottom: 89px;
   line-height: 29px;
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 700;
   color: var(--color-hero-article);
 }
 
@@ -362,7 +375,6 @@ input[type=search] {
 
 .hero-btn {
   padding: 25px 41px;
-  margin-bottom: 100px;
   font-weight: 700;
   font-size: 23px;
   line-height: 28px;
@@ -408,10 +420,6 @@ input[type=search] {
   padding-left: 1px;
 }
 
-/* .section-about {
-  padding: 25px 50px 50px 50px;
-} */
-
 .about-title {
   margin-bottom: 20px;
 }
@@ -429,7 +437,6 @@ input[type=search] {
 }
 
 .about-block {
-  /* padding-top: 25px; */
   display: flex;
 }
 
@@ -465,8 +472,8 @@ input[type=search] {
 }
 
 .about-btn {
-  width: 175px;
-  height: 60px;
+  min-width: 175px;
+  min-height: 60px;
   display: flex;
   align-self: center;
   align-items: center;
@@ -480,7 +487,6 @@ input[type=search] {
 .about-block-right {
   width: calc((100% - 32px) / 2);
   flex: 1;
-  position: relative;
 }
 
 .about-block-descr:not(:last-child) {
@@ -497,50 +503,78 @@ input[type=search] {
 
 .about-right-div {
   max-width: 530px;
-  padding-left: 50px;
+  padding-left: 16px;
 }
 
 .about-right-title {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: #000000;
 }
 
-.about-right-top,
-.about-right-bottom {
-  width: 190px;
+.about-right-text {
+  width: 83%;
+}
+
+.about-right-top-block,
+.about-right-bottom-block {
+  min-width: 30%;
   height: 163px;
-  background-repeat: no-repeat;
-  background-position: bottom left;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
-.about-right-top {
-  background-image: url(../image/ellipse.svg);
+
+/* .about-right-top-elipse-div, */
+.about-right-top-elipse-svg {
+  position: absolute;
+  top: 43px;
+  left: -1%;
+  width: 54%;
 }
 
-.about-right-bottom {
-  background-image: url(../image/ellipse.svg);
-  background-size: 129px;
-  margin-left: -1px;
+/* .about-right-top-wrap-div, */
+.about-right-top-wrap-svg {
+  position: absolute;
+  left: 31%;
+  width: 60%;
 }
 
-.about-block-descr svg,
-.about-block-descr-bottom svg {
+/* .about-right-bottom-elipse-div, */
+.about-right-bottom-svg {
+  position: absolute;
+  top: 38px;
+  left: 1%;
+  width: 54%;
+}
+
+/* .about-right-bottom-wrap-div, */
+.about-right-bottom-svg {
+  position: absolute;
+  left: 24%;
+  width: 60%;
+}
+
+.about-right-top-wrap-svg,
+.about-right-bottom-wrap-svg {
   transition: 0.3s ease-in-out;
   transition-property: transform;
 }
 
-.about-block-descr-top svg {
-  left: 70px;
-  bottom: 2px;
-  position: relative;
+.about-right-bottom-elipse-svg {
+  position: absolute;
+  top: 39px;
+  left: 2%;
+  width: 55%;
 }
 
-.about-block-descr-bottom svg {
-  left: 55px;
-  position: relative;
+.about-right-bottom-wrap-svg {
+  position: absolute;
+  left: 24%;
+  width: 60%;
 }
 
 .projects-container {
@@ -549,11 +583,11 @@ input[type=search] {
 }
 
 .projects-title {
-  margin-bottom: 53px;
+  margin-bottom: 52px;
 }
 
 .projects-steps {
-  margin-bottom: 48px;
+  margin-bottom: 47px;
   display: flex;
 }
 
@@ -592,7 +626,7 @@ input[type=search] {
 }
 
 .projects-left-text2 {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .projects-btn {
@@ -651,7 +685,7 @@ input[type=search] {
   padding: 0;
   background-color: transparent;
   border: 0;
-  width: 50px;
+  min-width: 50px;
   height: 50px;
   cursor: pointer;
   margin: 31px 0;
@@ -666,7 +700,6 @@ input[type=search] {
 }
 
 .question-btn-plus {
-  /* margin: 10px 0px; */
   margin: 0px 0px;
   background-color: #ececec;
   border-radius: 100%;
@@ -841,7 +874,7 @@ textarea::placeholder {
     box-shadow: 14px 9px 64px rgb(27 23 57 / 12%);
   }
 
-  .nav-search:hover .submit{
+  .nav-search:hover .submit {
     outline-color: #FF9900;
   }
 
@@ -869,7 +902,7 @@ textarea::placeholder {
 
   .about-block-descr:hover svg,
   .about-block-descr-bottom:hover svg {
-    transform:rotate(49deg);
+    transform: rotate(49deg);
   }
 
   .projects-btn-right:hover,
@@ -1112,4 +1145,8 @@ textarea::placeholder {
 .footer-social-link-ok:active:not(:focus-visible) svg {
   fill: var(--color-dark);
   outline: none;
+}
+
+.burger {
+  display: none;
 }
